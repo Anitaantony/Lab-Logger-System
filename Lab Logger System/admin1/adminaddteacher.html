@@ -1,0 +1,42 @@
+<html>
+ <head>
+  <title>Add Teacher</title>
+  <link rel="stylesheet" href="home.css">
+  </head>
+ <body>
+   <div class="main">
+    <center>
+      <font  size="6">
+      <table cellspacing="2" cellpadding="2" width="30%" height="50%">
+      <form method="POST" action="adminaddteacher.php">
+      <u><h2>Add New Teacher:</h2></u><br><br>
+        <tr>
+	       <td>Teacher ID: </td>
+	       <td><input type="text" name="teacherId"  required> </td>
+  	</tr>
+  	<tr>
+	       <td>Teacher Name:</td>
+	       <td><input type="text" name="teacherName" required> </td>
+  	</tr>
+ 	 <tr>
+	     <td>Pasword:</td>
+	       <td><input type="text"  name="password" required></td>
+ 	 </tr>
+ 	 <tr>
+	     <td>Contact:</td>
+	      <td> <input type="tel" name="teacherContact" required> </td>
+	</tr>
+  	<tr>
+	   <td>Email:</td>
+	      <td> <input type="text" name="email" required> </td>
+	</tr>
+	<tr>
+        <td>Department:</td>
+           <td> <input type="text" name="teacherDepartment" required> </td>
+     </tr>
+    	</table><br>
+	  <button type="submit" class="submit-btn">Add</button>
+     </form>
+    </center>
+   </body>
+</html>

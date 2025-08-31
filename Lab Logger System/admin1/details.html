@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Login Details</title>
+</head>
+<body>
+    <h1>Display Using :</h1>
+
+    <button onclick="displayDate()">Date</button>
+    <button onclick="displayAdmissionNumber()">Admission Number</button>
+
+    <script>
+        function displayDate() {
+            var userInput = prompt("Enter the date:");
+            if (userInput !== null) {
+                alert("Displaying using Date: " + userInput);
+            }
+        }
+
+        function displayAdmissionNumber() {
+            var userInput = prompt("Enter the Admission Number:");
+            if (userInput !== null) {
+                alert("Displaying using Date: " + userInput); 
+            }          
+        }
+    </script>
+</body>
+</html>

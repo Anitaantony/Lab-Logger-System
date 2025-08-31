@@ -1,0 +1,154 @@
+<html>
+ <head>
+  <title>signup</title>
+   <style>
+    *{
+	margin:0;
+	padding:0;
+     }
+
+   .hero{
+	height:100%;
+	width:100%;
+	background-size:cover;
+	position:absolute;
+	background-color:#008080;
+     }
+
+   .form-box{
+	width:380px;
+	height:480px;
+	position:relative;
+	margin: 4% auto;
+	background-color:#f5f5f5;
+	padding:25px;
+	overflow:hidden;
+     }
+
+    .button-box{
+	width:220px;
+	margin:15px auto;
+	position:relative;
+	box-shadow:0 0 20px 9px #ff61241f;
+	border-radius:30px;
+     }
+
+   .tooggle-btn{
+	padding:10px 30px;
+	cursor:pointer;
+	background:transparent;
+	border:0;
+	outline:none;
+	position:relative;
+     }
+
+    #btn{
+	top:0;
+	left:0;
+	position:absolute;
+	width:110px;
+	height:100%;
+	background:linear-gradient(to right, #00bbbb, #007a7a);
+	border-radius:30px;
+	transition:.5s;
+    }
+
+	.input-group{
+    top: 50px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+    padding-left: 0px;
+    } 
+
+   .input-field{
+	width:100%;
+	padding:10px 0px;
+	margin:5px;
+	border-left:0;
+	border-top:0;
+	border-right:0;
+	border-bottom:1px solid #999;
+	outline:none;
+	background:transparent;
+    }
+
+   .submit-btn{
+	width:75%;
+	padding:10px 10px;
+	margin:5px;	
+	cursor:pointer;
+	display:block;
+	margin:auto;
+	border:0;
+	outline:none;
+	border-radius:30px;
+     }
+
+    #teacher{
+	left:15px;
+     }
+
+    #student{
+         left:450px;
+     }
+
+   </style>
+ </head>
+ <body>
+   <div class="hero">
+     <div class="form-box">
+       <div class="button-box">
+         <div id="btn"></div>
+	<button type="button" class="tooggle-btn" onclick="teacher()">Teacher</button>
+	<button type="button" class="tooggle-btn" onclick="student()">Student</button>
+	  <form id="teacher" action="signup.php" method="POST" class="input-group">
+	     <input type="text" class="input-field" name="teacherId" placeholder="Teacher's Id" required> 
+	     <input type="text" class="input-field" name="teacherName" placeholder="Name" required> 
+	     <input type="password" class="input-field" name="password" placeholder="Password" required> 
+	     <input type="tel" class="input-field" name="teacherContact" placeholder="Contact" required> 
+	     <input type="email" class="input-field" name="email" placeholder="Email" required> 
+	     <input type="text" class="input-field" name="teacherDepartment" placeholder="Department" required>
+ 	     <br><br>
+	     <button type="submit" name="teacher_signup" class="submit-btn">Signup</button>
+	  </form>
+
+
+	<form id="student" action="signup.php" method="POST" class="input-group">
+	 <input type="text" class="input-field" name="admissionnumber" placeholder="Admission number" required> 
+	 <input type="text" class="input-field" name="studentName" placeholder="Name" required> 
+	 <input type="password" class="input-field" name="password" placeholder="Password" required> 
+	 <input type="tel" class="input-field" name="studentContact" placeholder="Contact" required> 
+	 <input type="email" class="input-field" name="email" placeholder="Email" required> 
+	 <input type="text" class="input-field" name="studentcourse" placeholder="Course" required>
+	 <input type="text" class="input-field" name="studentbatch" placeholder="Batch" required>
+	 <input type="text" class="input-field" name="studentyear" placeholder="Year" required>
+	 <br><br>
+	 <button type="submit" name="student_signup" class="submit-btn">Signup</button>
+     </form>
+   </div>
+  </div>
+    <script>
+	var x=document.getElementById("teacher");
+	var y=document.getElementById("student");
+	var z=document.getElementById("btn");
+
+	function student(){
+	x.style.left="400px";
+	y.style.left="20px";
+	z.style.left="110px";
+	}
+
+	function teacher(){
+	x.style.left="20px";
+	y.style.left="450px";
+	z.style.left="0px";
+	}
+    </script>
+ </body>
+</html>
+
+
+
+
+

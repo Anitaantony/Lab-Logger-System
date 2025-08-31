@@ -1,0 +1,16 @@
+<?php
+ include('dbconn.php');
+?>
+<?php
+     $programno=$_POST['pgmno'];
+     $date=$_POST['date'];
+     $day=$_POST['day'];
+     $programname=$_POST['name'];
+     $language=$_POST['language'];
+     $teacher=$_POST['teacher'];
+
+     $sql="insert into tasks values('$programno','$date','$day','$programname','$language','$teacher')";
+     $query=mysql_query($sql) or die (mysql_error());
+     echo "<br>";
+     echo ("inserted successfully");
+ ?>

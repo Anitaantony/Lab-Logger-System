@@ -1,0 +1,50 @@
+<html>
+ <head>
+  <title>Add Student</title>
+  <link rel="stylesheet" href="home.css">
+  </head>
+ <body>
+   <div class="main">
+    <center>
+      <font  size="6">
+      <table cellspacing="2" cellpadding="2" width="30%" height="50%">
+      <form method="POST" action="adminaddstudent.php">
+      <u><h2>Add New Student:</h2></u><br><br>
+        <tr>
+	       <td>Admission Number: </td>
+	       <td><input type="text" name="AdmissionNumber"  required> </td>
+  	</tr>
+  	<tr>
+	       <td>Student Name:</td>
+	       <td><input type="text" name="teacherName" required> </td>
+  	</tr>
+ 	 <tr>
+	     <td>Pasword:</td>
+	       <td><input type="text"  name="password" required></td>
+ 	 </tr>
+ 	 <tr>
+	     <td>Contact:</td>
+	      <td> <input type="tel" name="studentContact" required> </td>
+	</tr>
+  	<tr>
+	   <td>Email:</td>
+	      <td> <input type="text" name="email" required> </td>
+	</tr>
+	<tr>
+        <td>Course:</td>
+           <td> <input type="text" name="studentCourse" required> </td>
+     </tr>
+     <tr>
+        <td>Batch:</td>
+           <td> <input type="text" name="studentbatch" required> </td>
+     </tr>
+     <tr>
+        <td>Year:</td>
+           <td> <input type="text" name="studentyear" required> </td>
+     </tr>
+    	</table><br>
+	  <button type="submit" class="submit-btn">Add</button>
+     </form>
+    </center>
+   </body>
+</html>
